@@ -15,7 +15,16 @@ body {
 }
 
 header {
-  background-color: red;
+  display: flex;
+  align-items: center;
+  min-height: 1rem /* 64px */;
+  width: 16vh;
+  justify-content: space-between;
+  padding-bottom: 0px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .box {
@@ -27,7 +36,9 @@ header {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   overflow-y: scroll;
+  overflow: hidden;
   height: 100%;
+  border-radius: 1.5rem;
 }
 
 section {
@@ -37,6 +48,7 @@ section {
   align-items: center;
   scroll-snap-align: start;
   scroll-behavior: smooth;
+  border-radius: 1.5rem;
 }
 
 .one {
@@ -56,5 +68,11 @@ section {
 }
 
 footer {
-  background-color: black;
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  min-height: 1rem /* 64px */;
+  width: 16vh;
+  justify-content: space-between;
+  padding-top: 0px;
 }
