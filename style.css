@@ -14,6 +14,7 @@ body {
   min-height: 100vh;
   background-color: #171717;
   line-height: 1.2;
+  user-select: none;
 }
 
 header {
@@ -80,6 +81,23 @@ img {
   width: 128px;
   padding: 2px;
   border: solid 2px #f14a12;
+  transition: transform 0.2s;
+}
+
+img:hover {
+  opacity: 90%;
+  transform: scale(1.1);
+  transition-duration: 500ms;
+}
+
+.zoom {
+  transition: transform 0.2s;
+}
+
+.zoom:hover {
+  opacity: 80%;
+  transform: scale(1.1);
+  transition-duration: 500ms;
 }
 
 .fish {
