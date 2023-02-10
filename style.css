@@ -81,13 +81,6 @@ img {
   width: 128px;
   padding: 2px;
   border: solid 2px #f14a12;
-  transition: transform 0.2s;
-}
-
-img:hover {
-  opacity: 90%;
-  transform: scale(1.1);
-  transition-duration: 500ms;
 }
 
 .zoom {
@@ -95,7 +88,7 @@ img:hover {
 }
 
 .zoom:hover {
-  opacity: 80%;
+  opacity: 90%;
   transform: scale(1.1);
   transition-duration: 500ms;
 }
