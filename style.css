@@ -12,25 +12,42 @@ body {
   align-items: center;
   text-align: center;
   min-height: 100vh;
+  background-color: #171717;
+  line-height: 1.2;
 }
 
 header {
   display: flex;
   align-items: center;
   min-height: 1rem /* 64px */;
-  width: 16vh;
-  justify-content: space-between;
-  padding-bottom: 0px;
+  width: 32vh;
+  justify-content: space-around;
+  margin: 8px;
+  border-radius: 12px;
+  background-color: #f5f5f5;
+  padding: 2px 12px 2px 12px;
 }
 
 a {
   text-decoration: none;
+  color: #171717;
+  transition: all 0.2s ease-in-out;
 }
+
+a:hover {
+  color: #f14a12;
+  transform: scale(1.1);
+}
+
+/* Card container */
 
 .box {
   width: 320px;
   height: 480px;
+  border-radius: 1.5rem;
 }
+
+/* Scroll container */
 
 .container {
   scroll-snap-type: y mandatory;
@@ -41,6 +58,8 @@ a {
   border-radius: 1.5rem;
 }
 
+/* Cards / Sections*/
+
 section {
   height: 100%;
   display: flex;
@@ -48,23 +67,41 @@ section {
   align-items: center;
   scroll-snap-align: start;
   scroll-behavior: smooth;
-  border-radius: 1.5rem;
+  padding: 2rem 1.5rem;
+  background-color: #f5f5f5;
 }
 
 .one {
-  background-color: aqua;
+  flex-direction: column;
+}
+
+img {
+  border-radius: 99px;
+  width: 128px;
+  padding: 2px;
+  border: solid 2px #f14a12;
+}
+
+.fish {
+  width: 12px;
+  position: relative;
+  top: 2px;
+  border: none;
+  padding: 0;
+}
+
+.subtitle {
+  font-size: x-small;
+  font-weight: lighter;
 }
 
 .two {
-  background-color: blueviolet;
 }
 
 .three {
-  background-color: brown;
 }
 
 .four {
-  background-color: orange;
 }
 
 footer {
@@ -72,7 +109,11 @@ footer {
   display: flex;
   align-items: center;
   min-height: 1rem /* 64px */;
-  width: 16vh;
-  justify-content: space-between;
-  padding-top: 0px;
+  width: 24vh;
+  max-width: 40vh;
+  justify-content: space-around;
+  margin: 8px;
+  border-radius: 12px;
+  background-color: #f5f5f5;
+  padding: 2px 12px 2px 12px;
 }
