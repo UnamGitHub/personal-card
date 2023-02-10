@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  max-height: 100vh;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
   align-items: center;
   text-align: center;
   min-height: 100vh;
+  max-height: 100vh;
   background-color: #171717;
   line-height: 1.2;
   user-select: none;
@@ -22,6 +24,7 @@ header {
   align-items: center;
   min-height: 1rem /* 64px */;
   width: 32vh;
+  max-width: 40vh;
   justify-content: space-around;
   margin: 8px;
   border-radius: 12px;
@@ -64,6 +67,7 @@ a:hover {
 
 section {
   height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
